@@ -35,3 +35,9 @@
 ```bash
 $ roslaunch darknet_ros darknet_ros.launch
 ```
+
+## Configure:
+- Names and other parameters of the publishers, subscribers and actions can be modified from `darknet_ros/config/ros.yaml`.
+- Parameters related to YOLO object detection algorithm can be modified from `darknet_ros/config/yolo.yaml`.
+- It is recommended to create a copy of the existing configuration file(s) as a template and do necessary modifications.
+- Reference the updated configuration file(s) in `darknet_ros/launch/darknet_ros.launch` or create new launch file(s).
