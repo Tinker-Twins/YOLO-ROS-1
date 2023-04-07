@@ -1,23 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <launch>
-
-  <!-- Camera -->
-
-  <node name="usb_cam" pkg="usb_cam" type="usb_cam_node" output="screen" >
-    <param name="video_device" value="/dev/video0" />
-    <param name="image_width" value="320" />
-    <param name="image_height" value="240" />
-    <param name="pixel_format" value="yuyv" />
-    <param name="color_format" value="yuv422p" />
-    <param name="camera_frame_id" value="camera" />
-    <param name="camera_name" value="usb_cam" />
-    <param name="io_method" value="mmap"/>
-    <param name="camera_info_url" value="package://usb_cam/camera_info/camera.yaml"/>
-  </node>
-
-  <!-- Darknet YOLO -->
-
   <!-- Console launch prefix -->
   <arg name="launch_prefix" default=""/>
   <arg name="image" default="/camera/rgb/image_raw" />
